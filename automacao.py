@@ -16,9 +16,15 @@ time.sleep(3)
 pyautogui.hotkey('ctrl', 't')
 time.sleep(3)
 
-link = 'https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga'
-pyperclip.copy(link) # necessá3rio utilizar o pyperclip copy para evitar erros com caracteres especiais
-pyautogui.hotkey('ctrl', 'v') # hotkey utiliza ataplhos no teclado para otimizar controles
+link = (
+    'https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga'
+)
+pyperclip.copy(
+    link
+)   # necessá3rio utilizar o pyperclip copy para evitar erros com caracteres especiais
+pyautogui.hotkey(
+    'ctrl', 'v'
+)   # hotkey utiliza ataplhos no teclado para otimizar controles
 pyautogui.press('enter')
 time.sleep(3)
 
